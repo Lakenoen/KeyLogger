@@ -1,4 +1,4 @@
 **obj/
 **bin/
-.log
-.pdb
+*.log
+*.pdb
