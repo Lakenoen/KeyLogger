@@ -1,0 +1,3 @@
+C:\CMake\bin\cmake.exe -E rm -f CMakeFiles\lnshared.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\lnshared.dir/objects.a @CMakeFiles\lnshared.dir\objects1.rsp
+C:\mingw64\bin\c++.exe -shared -o D:\code\projects\KbKeyLogger\keylogger\liblnshared.dll -Wl,--out-implib,liblnshared.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\lnshared.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\lnshared.dir\linkLibs.rsp

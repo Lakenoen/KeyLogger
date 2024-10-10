@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>x64;x86</Platforms>
+  </PropertyGroup>
+  <Target Name="CopyCustomContentOnPublish" AfterTargets="Publish">
+    <Copy SourceFiles="liblnshared.dll" DestinationFolder="$(PublishDir)"/>
+    <Copy SourceFiles="Settings.txt" DestinationFolder="$(PublishDir)"/>
+  </Target>
+  <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+    <Copy SourceFiles="liblnshared.dll" DestinationFolder="$(OutDir)"/>
+    <Copy SourceFiles="Settings.txt" DestinationFolder="$(OutDir)"/>
+  </Target>
+</Project>

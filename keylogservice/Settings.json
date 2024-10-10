@@ -1,0 +1,6 @@
+{
+    "Ip":"127.0.0.1",
+    "Port":11000,
+    "MaxConnection":255,
+    "PathToErrorLog":"ErrorLog.txt"
+}
